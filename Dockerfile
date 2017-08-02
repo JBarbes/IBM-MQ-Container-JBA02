@@ -119,8 +119,8 @@ ENV BASH_ENV=/usr/local/bin/iib_env.sh
 ENV ODBCINI=/etc/odbc.ini
 
 
-# Expose default admin port and http port, plus MQ ports
-EXPOSE 4414 7800 7883 1414 9443
+# Expose default admin port and http port, plus MQ ports, plus IIBSWITCH ports
+EXPOSE 4414 7800 7883 1414 9443 9011 9012 9013
 
 # USER iibuser
 
