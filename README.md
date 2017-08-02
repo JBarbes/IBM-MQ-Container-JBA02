@@ -31,7 +31,7 @@ In order to run a container from this image, it is necessary to accept the terms
 
 In addition to accepting the license, you can optionally specify an Integration Node name using the `NODENAME` environment variable.
 
-The last important point of configuration when running a container from this image, is port mapping.  The Dockerfile exposes ports `4414` and `7800` for IIB and `1414` and `9883` for MQ by default, for Integration Node administration and Integration Server HTTP traffic respectively.  This means you can run with the `-P` flag to auto map these ports to ports on your host.  Alternatively you can use `-p` to expose and map any ports of your choice.
+The last important point of configuration when running a container from this image, is port mapping.  The Dockerfile exposes ports `4414` and `7800` for IIB and `1414` and `9883` for MQ and `1414` and `9010, 9011 and 9012` for IIB SWITCHNODE access by default, for Integration Node administration and Integration Server HTTP traffic respectively.  This means you can run with the `-P` flag to auto map these ports to ports on your host.  Alternatively you can use `-p` to expose and map any ports of your choice.
 
 For example:
 
